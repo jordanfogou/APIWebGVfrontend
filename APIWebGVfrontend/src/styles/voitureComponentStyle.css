@@ -9,3 +9,26 @@
 .voitureContainer div {
     margin-bottom: 10px;
 }
+
+.editButton {
+    background-color: darkgreen;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-right: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.deleteButton {
+    background-color: darkred;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.editButton:hover, .deleteButton:hover {
+    opacity: 0.8;
+}

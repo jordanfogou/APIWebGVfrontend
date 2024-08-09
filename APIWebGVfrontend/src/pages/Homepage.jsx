@@ -1,12 +1,13 @@
 import React from 'react';
 
 function HomePage() {
-  return (
-    <div>
-    <h1>Bienvenue sur notre application de gestion de voitures et de garages </h1>
-    <p>veillez choisir une option pour naviguer </p>
-  </div>
-  );
-}
+    return (
+      <div className="homepage">
+        <h1>Bienvenue sur la page d'accueil</h1>
+        <p>Ceci est la page d'accueil de votre application.</p>
+      </div>
+    );
+  }
+  
 
 export default HomePage;

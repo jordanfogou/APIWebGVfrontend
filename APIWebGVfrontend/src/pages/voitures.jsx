@@ -2,11 +2,12 @@ import { useEffect, useState } from 'react';
 import "../styles/voituresPagesStyle.css";
 import axios from "axios";
 import VoitureComponent from '../components/voiturecomponent';
+import { Link } from 'react-router-dom';
 
 function Voitures() {
-
   const [voitures, setVoitures] = useState([]);
 
+  // Fonction pour récupérer les voitures depuis l'API
   const fetchVoitures = async () => {
     try {
       const response = await axios.get(`https://localhost:7099/api/Voitures`);
@@ -19,11 +20,14 @@ function Voitures() {
 
   useEffect(() => {
     fetchVoitures();
-  }, [])
+  }, []);
 
   return (
     <div>
       <h1>Liste des Voitures</h1>
+      
+     
+
       <div className='voiturebox'>
         {voitures.map((v) => <VoitureComponent key={v.id} voiture={v} />)}
       </div>

@@ -1,0 +1,24 @@
+.menuContextuel {
+    position: absolute;
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.menuContextuel ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menuContextuel ul li {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.menuContextuel ul li:hover {
+    background-color: #555;
+}
